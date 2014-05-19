@@ -12,6 +12,7 @@ import org.eclipse.debug.internal.ui.IInternalDebugUIConstants;
 import org.eclipse.debug.internal.ui.SWTFactory;
 import org.eclipse.debug.internal.ui.launchConfigurations.ClosedProjectFilter;
 import org.eclipse.debug.internal.ui.launchConfigurations.DeletedProjectFilter;
+import org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsMessages;
 import org.eclipse.debug.internal.ui.launchConfigurations.WorkingSetsFilter;
 import org.eclipse.debug.ui.AbstractLaunchConfigurationTab;
 import org.eclipse.jface.dialogs.Dialog;
@@ -150,7 +151,7 @@ public class SelectLaunchConfigurationsTab extends AbstractLaunchConfigurationTa
 			
 		} catch (CoreException ce) {
 			DebugUIPlugin.log(ce);
-			MessageDialog.openError(getShell(), "", ce.toString());			
+			MessageDialog.openError(getShell(), LaunchConfigurationsMessages.LaunchConfigurationDialog_Error_19, ce.toString());			
 		}
 		
 
@@ -177,7 +178,7 @@ public class SelectLaunchConfigurationsTab extends AbstractLaunchConfigurationTa
 						
 				} catch (CoreException ce) {
 					DebugUIPlugin.log(ce);
-					MessageDialog.openError(getShell(), "", ce.toString());			
+					MessageDialog.openError(getShell(), LaunchConfigurationsMessages.LaunchConfigurationDialog_Error_19, ce.toString());			
 				}
 				
 			}
