@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="org.kholupko.xoredtest.ui.CompositeLaunchConfigurationTabGroup"
+            id="org.kholupko.xoredtest.ui.CompositeLaunchConfigurationTabGroup"
+            type="org.kholupko.xoredtest.core.CompositeLaunchConfigurationType">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="org.kholupko.xoredtest.core.CompositeLaunchConfigurationType"
+            icon="icons/composite_launch.gif"
+            id="org.kholupko.xoredtest.ui.CompositeLaunchConfigurationType.image">
+      </launchConfigurationTypeImage>
+   </extension>
+   <extension
+         point="org.eclipse.debug.core.statusHandlers">
+      <statusHandler
+            class="org.kholupko.xoredtest.ui.CompositeLaunchExceptionStatusHandler"
+            code="500"
+            id="org.kholupko.xoredtest.ui.CompositeLaunchExceptionStatusHandler"
+            plugin="org.kholupko.xoredtest.core">
+      </statusHandler>
+   </extension>
+
+</plugin>

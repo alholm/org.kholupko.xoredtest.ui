@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Composite Launch Configuration UI PlugIn
+Bundle-SymbolicName: org.kholupko.xoredtest.ui;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: akholupko
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.debug.ui,
+ org.kholupko.xoredtest.core,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Export-Package: org.kholupko.xoredtest.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
